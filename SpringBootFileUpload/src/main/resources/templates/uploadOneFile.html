@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ 
+   <head>
+      <meta charset="UTF-8">
+      <title>Upload One File</title>
+   </head>
+   
+   <body>
+      <th:block th:include="/_menu"></th:block>
+       
+      <h3>단일 파일 업로드:</h3>
+       
+      <!-- MyUploadForm -->
+       <!-- ${}= 컨트롤러에서 전달받은 변수에 접근할 수 있는 기능으로 th: 속성명 안에서만 사용가능 -->
+      <form th:object="${myUploadForm}" method="POST"
+         action="" enctype="multipart/form-data">
+         설명:
+         <br>
+         <input th:field="*{description}" style="width:300px;"/>                
+         <br/><br/>  
+         파일 업로드: <input th:field="*{fileDatas}" type="file"/>
+         <br />  
+         <input type="submit" value="Upload">
+      </form>
+       
+   </body>
+</html>

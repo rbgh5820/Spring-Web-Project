@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring Boot Upload</title>
+</head>
+<body>
+ <body>
+      <th:block th:include="/_menu"></th:block>
+      <h2>스프링 부트로 파일 업로드</h2>
+      <ul>
+      <!-- @ : URL 파라미터를 지정할때 사용 -->
+        <li><a th:href="@{/uploadOneFile}">단일 파일 전송</a></li>
+        <li><a th:href="@{/uploadMultiFile}">다중 파일 전송</a></li>
+      </ul>
+       
+</body>
+</html>
