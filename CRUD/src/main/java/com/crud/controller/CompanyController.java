@@ -50,6 +50,6 @@ public class CompanyController {
 	 @RequestMapping(value="/deleteemp/{id}",method = RequestMethod.GET)    
 	    public String delete(@PathVariable int id){    
 	        dao.delete(id);    
-	        return "redirect:/viewemp";
+	        return "redirect:/viewemp"; // 데이터 삭제하는 기능
 	    }     
 }
