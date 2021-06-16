@@ -22,7 +22,7 @@ public class FileController {
 	@RequestMapping(value = "/")
 	   public String homePage() {
 	 
-	      return "index";
+	      return "index"; // index.html 화면 띄우는 매핑
 	   }
 	 
 	   // 단일 파일 업로드 화면 보여주기
